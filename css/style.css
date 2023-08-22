@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-size:16px ; margin: 0; padding: 0;
+    text-decoration: none; color:#000;
+    list-style: none;
+}
+header {
+    width: 1200px; height: 100px; margin: 0 auto;
+    background: #eee;
+    display: flex; justify-content: space-between;
+    align-items: center;
+
+}
+header h1 {width: 200px; height: 40px; background: coral;}
+header nav {background: aqua; margin-right: 20px;}
+header nav > ul {display: flex; /* flex - 기본이 수평. justice안줘도됨 */}
+header nav > ul > li {position: relative;}
+header nav > ul > li > a {
+    display: block; width: 160px; line-height: 50px;
+    text-align: center;
+}
+header nav > ul > li > .sub {
+    width: 100%; 
+    position: absolute; background: lime;}
+header nav > ul > li > .sub li {}
+header nav > ul > li > .sub li a {
+    display: block; line-height: 30px; text-align: center;
+}
